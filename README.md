@@ -12,7 +12,7 @@ End users could train their own large langauge models through **LLMFactory** wit
 - Select some **function** modules, e.g., coding, medical advices, math, etc.
 - Select some reward models.
 
-After 30 mins, you will get a url to download your model files and a serving url.
+After 30 mins, you will get a url to download your model weights and a serving url.
 
 # For Developers
 
