@@ -12,6 +12,8 @@ End users could train their own large langauge models through **LLMFactory** wit
 - Select some **function** modules, e.g., coding, medical advices, math, etc.
 - Select some reward models.
 
+After 30 mins, you will get a url to download your model files and a serving url.
+
 # For Developers
 
 ## data
@@ -34,6 +36,16 @@ End users could train their own large langauge models through **LLMFactory** wit
 
 We do not directly sell data, we sell models.
 
+## auto-testing
+- MMLU
+- C-Eval
 
+
+# current stage
+- use a 500M bloom as a demo
+
+# TODO list
+
+- automatically read documents (tables/images) and extract QA pairs.
 
 
