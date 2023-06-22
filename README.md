@@ -1,5 +1,5 @@
 # LLMFactory
-A factory to standardize LLM adaptation through modularization
+A factory to standardize and modularize  training of vertical LLMs
 
 # Objective
 End users could train their own large langauge models through **LLMFactory** without coding. The only thing users have to do is  to  percisely discribe  their need.
