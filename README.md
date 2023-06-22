@@ -3,9 +3,37 @@ A factory to standardize LLM adaptation through modularization
 
 # Objective
 End users could train their own large langauge models through **LLMFactory** without coding. The only thing users have to do is  to  percisely discribe  their need.
+ 
+# For End Users
 
-# Step
+## Steps to get a adapted model for users
 - Select a backbone, e.g., Llama and Bloom
 - Optionaly select some **knowlege** modules, each is used to inject knowledge in specific field.
 - Select some **function** modules, e.g., coding, medical advices, math, etc.
 - Select some reward models.
+
+# For Developers
+
+## data
+
+### pretraining data
+
+- collect plain data
+- classify these data
+- train Lora modules for each backbone
+
+### finetuning data:
+- distill data (converation and instruction) from GPT4 (converation from chatgpt since it is cheaper)
+- collect human instruction/converation fron online source or real-scenaiors.
+- classify these instruction/converation data
+- quality ranking
+- filtering strategies (diversity)
+
+### reward models
+- modularize reward models
+
+We do not directly sell data, we sell models.
+
+
+
+
