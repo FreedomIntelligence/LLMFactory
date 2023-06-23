@@ -36,7 +36,7 @@ After 30 mins, you will get a url to download your model weights and a serving u
 
 We do not directly sell data, we sell models.
 
-## plugins/tools
+### plugins/tools
 
 …
 
