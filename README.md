@@ -21,7 +21,7 @@ from llmzoo import Factory
 
 factory =  Factory()
 model = factory.create_backbone("bloom")
-model = model.add_function("coding")
+model = model.add_function({"coding":0.8; "Chinese":0.2})
 model.train()
 model.save("bloom-coding")
 ip, port = model.serving()
