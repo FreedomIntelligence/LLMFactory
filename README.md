@@ -16,6 +16,16 @@ After 30 mins, you will get a url to download your model weights and a serving u
 
 # For Developers
 
+```
+from llmzoo import Factory
+
+factory =  Factory()
+model = factory.create_backbone("bloom")
+model = model.add_function("coding")
+model.train()
+model.save("bloom-coding")
+ip, port = model.serving()
+```
 ## data
 
 ### pretraining data
