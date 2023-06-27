@@ -28,6 +28,9 @@ ip, port = model.serving()
 ```
 ## data
 
+
+### RAG
+
 ### pretraining data
 
 - collect plain data
