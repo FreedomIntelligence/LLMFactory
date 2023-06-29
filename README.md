@@ -67,5 +67,5 @@ We do not directly sell data, we sell models.
 # TODO list
 
 - automatically read documents (tables/images) and extract QA pairs.
-
+- parameter-efficent deployment
 
