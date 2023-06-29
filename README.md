@@ -68,4 +68,4 @@ We do not directly sell data, we sell models.
 
 - automatically read documents (tables/images) and extract QA pairs.
 - parameter-efficent deployment
-
+- an interface to upload our own json file
