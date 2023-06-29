@@ -17,10 +17,12 @@ After 30 mins, you will get a url to download your model weights and a serving u
 # For Developers
 
 ```
-from llmzoo import Factory
+import llmzoo
 
-factory =  Factory()
-model = factory.create_backbone("bloom")
+
+factory =  llmzoo.Factory()
+model = factory.create_backbone(llmzoo.BLOOM)
+#print(llmzoo.get_available_functions())
 model = model.add_function({"coding":0.8; "Chinese":0.2})
 model.train()
 model.save("bloom-coding")
