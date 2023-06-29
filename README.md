@@ -34,7 +34,7 @@ ip, port = model.serving()
 
 ### RAG
 
-### pretraining data
+### pretraining data (less is more, smaler models consumes less data)
 
 - collect plain data
 - classify these data
