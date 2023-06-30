@@ -14,6 +14,36 @@ End users could train their own large langauge models through **LLMFactory** wit
 
 After 30 mins, you will get a url to download your model weights and a serving url.
 
+# Getting started
+## Installation
+To get started, follow these steps to install the required packages:
+1. Clone the repository:
+```bash
+git clone https://github.com/FreedomIntelligence/LLMFactory.git
+cd LLMFactory
+```
+2. Install the package:
+```bash
+pip install .
+```
+3. Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+## Configure Local Resource
+To configure the local resources, follow these steps:
+1. Edit the Factory resource configuration file:
+   - Open the file **`factory/resource.json`**.
+   - Locate your local models and data.
+   - Make the necessary changes.
+  
+2. Edit the training script template:
+   - Open the file llmfactory/constants.py.
+   - Adapt the script to match your actual gpt-resource environment, such as nnodes and nproc_per_node.
+
+By following these steps, you will be able to set up and configure the necessary resources for the project.
+
 # For Developers
 
 ```
