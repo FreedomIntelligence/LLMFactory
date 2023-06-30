@@ -1,0 +1,36 @@
+[
+    {
+        "id": "Example Medical Data 1",
+        "conversations": [
+            {
+            "from": "human",
+            "value": "What to do if I have a fever？"
+            },
+            {
+            "from": "gpt",
+            "value": "If you have a fever, rest, drink plenty of fluids, and consider taking over-the-counter fever-reducing medication if necessary, while seeking medical attention if the fever persists or worsens."
+            },
+            {
+            "from": "human",
+            "value": "what if i still have diarrhea?"
+            },
+            {
+            "from": "gpt",
+            "value": "If you still have diarrhea, it is important to stay hydrated by drinking plenty of fluids, avoid foods that can worsen diarrhea, and consider over-the-counter anti-diarrheal medication if necessary, while seeking medical advice if the symptoms persist or become severe."
+            }
+        ]
+    },
+    {
+        "id": "Example Medical Data 2",
+        "conversations": [
+            {
+            "from": "human",
+            "value": "Can I eat seafood when pregnant?"
+            },
+            {
+            "from": "gpt",
+            "value": "Yes, seafood can be consumed during pregnancy, but certain types should be avoided or limited due to potential risks of mercury and foodborne illnesses."
+            }
+        ]
+    }
+]

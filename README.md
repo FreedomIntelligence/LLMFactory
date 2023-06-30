@@ -17,17 +17,37 @@ After 30 mins, you will get a url to download your model weights and a serving u
 # For Developers
 
 ```
-import llmzoo
+import llmfactory
 
+# Configure the resource in the factory/resource.json file
+factory = llmfactory.Factory()
 
-factory =  llmzoo.Factory()
-model = factory.create_backbone(llmzoo.BLOOM)
-#print(llmzoo.get_available_functions())
-model = model.add_function({"coding":0.8; "Chinese":0.2})
-model.train(save_path = "bloom-coding")
+# Show available models
+factory.show_available_model()
+# Output:
+# [Bloom]: bloom-560m, bloomz-560m, bloom-1b1, bloomz-1b1, bloomz-7b1-mt
+# [Llama]: llama-7b-hf, llama-13b-hf
+# [Baichuan]: baichuan-7B
 
-ip, port = model.serving()
+# Show available data
+factory.show_available_data()
+# Output:
+# [Local]: music, computer, medical
 
+# Select a model from the available model set
+model_config = factory.create_backbone("bloom-560m")
+
+# Set up the data configuration
+data_config = factory.prepare_data_for_training(num_data=50, data_ratios={"music": 0.4, "computer": 0.6})
+
+# Train a new model based on the existing model and data configuration
+model_config = factory.train_model(model_config, data_config, save_name="test")
+
+# Deploy the model on the command line
+factory.deploy_model_cli(model_config)
+
+# Deploy the model using Gradio
+factory.deploy_model_gradio(model_config)
 ```
 ## data
 
@@ -61,11 +81,15 @@ We do not directly sell data, we sell models.
 - C-Eval
 
 
-# current stage
-- use a 500M bloom as a demo
+# current stage v0.01
+- use a 560M bloom as a demo;
+- add ModelFactory, DataFactory for simple model/data selection.
 
 # TODO list
 
 - automatically read documents (tables/images) and extract QA pairs.
 - parameter-efficent deployment
 - an interface to upload our own json file
+
+# Acknowledgement
+- The code is mainly develped based on [LLMZoo](https://github.com/FreedomIntelligence/LLMZoo).

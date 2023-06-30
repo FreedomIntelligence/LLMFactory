@@ -1,0 +1,42 @@
+{
+    "training_config": {
+        "train_in_bg": false
+    },
+    "model_config": {
+        "bloom-560m": {
+            "model_path": "bigscience/bloom-560m"
+        },
+        "bloomz-560m": {
+            "model_path": "bigscience/bloomz-560m"
+        },
+        "bloom-1b1": {
+            "model_path": "bigscience/bloom-1b1"
+        },
+        "bloomz-1b1": {
+            "model_path": "bigscience/bloomz-1b1"
+        },
+        "bloomz-7b1-mt": {
+            "model_path": "bigscience/bloomz-7b1-mt"
+        },
+        "llama-7b-hf": {
+            "model_path": "decapoda-research/llama-7b-hf"
+        },
+        "llama-13b-hf": {
+            "model_path": "decapoda-research/llama-13b-hf"
+        },
+        "baichuan-7B": {
+            "model_path": "baichuan-inc/baichuan-7B"
+        }
+    },
+    "data_config": {
+        "music": {
+            "data_path": "data/example_music.json"
+        },
+        "computer": {
+            "data_path": "data/example_computer.json"
+        },
+        "medical": {
+            "data_path": "data/example_medical.json"
+        }
+    }
+}
