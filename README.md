@@ -12,6 +12,8 @@ End users could train their own large langauge models through **LLMFactory** wit
 - Select some **function** modules, e.g., coding, medical advices, math, etc.
 - Select some reward models.
 
+
+
 After 30 mins, you will get a url to download your model weights and a serving url.
 
 # Getting started
@@ -89,6 +91,8 @@ factory.deploy_model_gradio(model_config)
 - collect plain data
 - classify these data
 - train Lora modules for each backbone
+- if you choose two Lora moduels, some further data (mixed with two domains) should be used to further pretraining
+- one could upload data
 
 ### finetuning data:
 - distill data (converation and instruction) from GPT4 (converation from chatgpt since it is cheaper)
